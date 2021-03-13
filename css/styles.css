@@ -214,6 +214,8 @@ img {
 .contact-link {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 
 .contact-link:hover,
@@ -306,7 +308,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -325,7 +327,6 @@ img {
 
 .services-list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
@@ -356,7 +357,8 @@ img {
 
 .team-member-card {
   max-width: 270px;
-  padding: 30px 55px;
+  padding: 30px 32px;
+  background-color: var(--third-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -400,27 +402,27 @@ img {
   margin-top: 30px;
   max-width: 170px;
   height: 90px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-}
-
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 90px;
 }
 
-.clients-list-icon:hover,
-.clients-list-icon:focus {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .clients-list-icon {
