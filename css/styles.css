@@ -161,8 +161,6 @@ img {
 /*============= HEADER ============= */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -216,6 +214,8 @@ img {
   color: var(--secondary-color);
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-link:hover,
@@ -353,15 +353,14 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.team-member-card {
-  max-width: 270px;
-  padding: 30px 32px;
-  background-color: var(--third-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-card {
+  padding: 30px 32px;
+  background-color: var(--third-color);
 }
 
 .name-team-member,
@@ -538,8 +537,10 @@ img {
   margin-top: 30px;
 }
 
-.work-list-item:hover,
-.work-list-item:focus {
+.work-link:hover .work-card,
+.work-link:focus .work-card,
+.work-link:hover .work-img,
+.work-link:focus .work-img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
